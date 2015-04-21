@@ -1,0 +1,3 @@
+# new
+class Restaurant
+end
