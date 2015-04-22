@@ -1,17 +1,18 @@
 # new
 class Dish
 
-  attr_reader :price
+  attr_reader :name, :price
 
-  def initialize _price
-    @price.to_i
+  def initialize name, price
+    @name = name
+    @price = price.round(2)
   end
 
 end
 
 
-tofu = Dish.new(10.444)
-fries = Dish.new (5)
+tofu = Dish.new('tofu', 10.444)
+fries = Dish.new('fries', 5)
 
 puts tofu
 puts tofu.price.to_s
